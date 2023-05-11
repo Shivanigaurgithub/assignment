@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: #212020;
+    border-bottom: solid 1px rgb(61, 59, 59);
+    z-index:50;
+}
+nav{
+    background: #212020;
+    display: flex;
+    gap: 30px;       
+    margin-right: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;    
+} 
+a{
+    margin: 1em;
+    color: white;
+}
+.banner{
+    position: fixed;
+    color: white;
+    top: 0;
+    right: 0;
+    height: 1rem;
+    width: 10rem;
+    margin-right: -3rem;
+    transform: rotate(45deg);
+    border: solid orange;
+    background: orange;
+    text-align: center;
+    padding-left: 20px;
+}
+a:hover, .banner:hover{
+    color: grey;
+ } 
+.sap-salesforce{
+    background-image: url('https://gyansys.com/wp-content/uploads/2022/10/light-streaks.jpeg');
+    background-size: cover;
+    height:400px;
+    width:100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.sap-salesforce .content{
+    background:#666361;
+    height: 350px;
+    width: 500px;
+    text-align: left;
+    padding: 20px 10px;
+}
+.salesforce{
+    background:#212020;
+    height:400px;
+    width:100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.salesforce img{
+    border-radius: 50%;
+    transition: transform .5s ease;
+}
+
+.SAP{
+    background:#5f5b5b;
+    height:400px;
+    width:100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.salesforce .content, .SAP .content{
+    height: 200px;
+    width: 500px;
+    text-align: left;
+    padding: 20px 10px;
+}
+.SAP img{
+    border-radius: 50%;
+    background-color: white;   
+    transition: transform .5s ease; 
+}
+.salesforce img:hover, .SAP img:hover{
+    transform: rotateY(360deg);
+} 
+footer{
+    height: 40px;
+    width: 100%;
+    background:#212020;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    z-index:100 ;
+}
+@media (max-width: 375px){
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+}
