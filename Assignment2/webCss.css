@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background: #212020;
+    border-bottom: solid 1px rgb(61, 59, 59);
+    z-index:50;
+}
+nav{
+    background: #212020;
+    display: flex;
+    gap: 30px;       
+    margin-right: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;    
+} 
+a{
+    margin: 1em;
+    color: white;
+}
+.new-banner{
+    position: fixed;
+    color: white;
+    top: 0;
+    right: 0;
+    height: 1rem;
+    width: 10rem;
+    margin-right: -3rem;
+    transform: rotate(45deg);
+    border: solid orange;
+    background: orange;
+    text-align: center;
+    padding-left: 20px;
+}
+a:hover, .new-banner:hover{
+    color: grey;
+ } 
+.sap-salesforce{
+    background-image: url('https://gyansys.com/wp-content/uploads/2022/10/light-streaks.jpeg');
+    background-size: cover;
+    height:400px;
+    width:100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.sap-salesforce .content{
+    background:#474543;
+    height: 350px;
+    width: 500px;
+    text-align: left;
+    padding: 20px 10px;
+}
+.salesforce{
+    background:#212020;
+    height:400px;
+    width:100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.salesforce img{
+    border-radius: 50%;
+    transition: transform .5s ease;
+}
+
+.SAP{
+    background:#474543;
+    height:400px;
+    width:100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.salesforce .content, .SAP .content{
+    height: 200px;
+    width: 500px;
+    text-align: left;
+    padding: 20px 10px;
+}
+.SAP img{
+    border-radius: 50%;
+    background-color: white;   
+    transition: transform .5s ease; 
+}
+.salesforce img:hover, .SAP img:hover{
+    transform: rotateY(360deg);
+} 
+footer{
+    height: 40px;
+    width: 100%;
+    background:#212020;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    z-index:100 ;
+}
+@media (max-width: 375px){
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* dialog box CSS */
+:root {
+    --grey: #666161;
+    --orange: #d65905;
+    --white: #ffffff;
+    --light-blue: #06D4DE;
+  }
+#accDialog, #leadDialog{
+    background: var(--grey);
+    z-index: 100;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    right: 15%;
+    width: 700px;
+    height: 400px;
+    border: 0;
+    color: var(--white);
+  }
+  #leadDialog{
+    background: var(--grey);
+    z-index: 100;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    right: 15%;
+    width: 700px;
+    height: 480px;
+    border: 0;
+    color: var(--white);
+  }
+  #colseButton{
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    background-color: var(--orange);
+  }
+  .account-data{
+    padding-left: 23px;
+    padding-top: 20px;
+    margin-bottom: 7px;
+  }
+  .account-data p.fname, .account-data p.lname,  .account-data p.uname,  .account-data p.email{
+    padding-bottom: 8px;
+  }
+.account-data p.street, .account-data p.city,  .account-data p.state,  .account-data p.country, .account-data p.code{
+   font-style: italic;
+}
+
+#accDialog h1{
+    padding-left: 20px;
+    padding-top: 40px; 
+  }
+#leadDialog h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+  
+form{
+    margin:20px;
+  }
+form p, form input{
+    margin-bottom: 5px;
+}
+form input:focus{
+        outline: none;
+        border: 2px solid rgb(89, 89, 245)  ; 
+}
+form input, form button{
+    width: 650px;
+}
+form button{
+    height: 35px;
+    margin-bottom: 25px;
+}
+form #description{
+    height: 35px;
+    margin-bottom: 25px;
+}
+form #cancel{
+    background: var(--orange);
+    border: none;
+}
+form #submit{
+    background: var(--light-blue);
+    border: none;
+}
+.error {
+    color:red;
+    font-size: 0.8em;
+  }
+
+  /* Alert Box */
+  #alert-box {
+    display: none;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 9999;
+  }
+
+  
+  #alert-box > p {
+    margin-top:0px;
+  }
+  #alert-box p{
+    margin-bottom: 10px;
+  }
+  
+  #alert-box button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left:300px;
+    width:50px;
+  }
+
+ 
